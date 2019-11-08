@@ -12,6 +12,16 @@ class Number < Struct.new(:value)
   end
 end
 
+class Variable < Struct.new(:name)
+  def reducible?
+    true
+  end
+
+  def reduce(environment)
+    environment[name]
+  end
+end
+
 class Add < Struct.new(:left, :right)
   def to_s
     "#{left} + #{right}"
@@ -119,47 +129,5 @@ class EQ < Struct.new(:left,:right)
     else
       EQ.new(left.value == right.value)
     end
-  end
-end
-
-class Variable < Struct.new(:name)
-  def reducible?
-    true
-  end
-
-  def reduce(environment)
-    environment[name]
-  end
-end
-
-class Assignment < Struct.new(:name,:expression)
-  def to_s
-    "#{name} = #{expression} "
-  end
-
-  def inspect
-    "<<#{self}>>"
-  end
-
-  def reducible?
-    true
-  end
-
-  def reduce(environment)
-    if expression.reducible?
-      [Assignment.new(name,expression.reduce(environment)),environment]
-    else
-      [DoNothing.new,environment.merge({name => expression})]
-    end
-  end
-end
-
-class DoNothing
-  def to_s
-    "do-nothing"
-  end
-
-  def reducible?
-    false
   end
 end
