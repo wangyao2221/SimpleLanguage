@@ -36,12 +36,25 @@ require 'Statement'
 #
 # machine.run
 
+# machine = Machine.new(
+#        Sequence.new(
+#             Assignment.new(:x, Number.new(10)),
+#             Assignment.new(:y, Number.new(20))
+#        ),
+#        {}
+# )
+#
+# machine.run
+
 machine = Machine.new(
-       Sequence.new(
-            Assignment.new(:x, Number.new(10)),
-            Assignment.new(:y, Number.new(20))
+       While.new(
+           LessThan.new(Variable.new(:x), Number.new(10)),
+           Sequence.new(
+                       Assignment.new(:x, Add.new(Variable.new(:x), Number.new(1))),
+                       Assignment.new(:y, Add.new(Variable.new(:y), Number.new(1)))
+           )
        ),
-       {}
+       {x: Number.new(0), y: Number.new(0)}
 )
 
 machine.run

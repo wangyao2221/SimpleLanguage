@@ -55,11 +55,11 @@ end
 
 class Sequence < Struct.new(:first, :second)
   def to_s
-    "#{ first }; #{ second }"
+    "#{first}; #{second}"
   end
 
   def reducible?
-    true;
+    true
   end
 
   def reduce(environment)
@@ -70,5 +70,19 @@ class Sequence < Struct.new(:first, :second)
       reduce_first, reduce_environment = first.reduce(environment)
       [Sequence.new(reduce_first, second), reduce_environment]
     end
+  end
+end
+
+class While < Struct.new(:condition, :body)
+  def to_s
+    "while (#{condition}) { #{body} }"
+  end
+
+  def reducible?
+    true
+  end
+
+  def reduce(environment)
+    [If.new(condition, Sequence.new(body, self), DoNothing.new), environment]
   end
 end

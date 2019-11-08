@@ -13,6 +13,9 @@ class Number < Struct.new(:value)
 end
 
 class Variable < Struct.new(:name)
+  def to_s
+    "#{name}"
+  end
   def reducible?
     true
   end
