@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/.idea/sonarIssues.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/src/main/java/com/wangyao2221/simplelanguage/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/src/main/java/com/wangyao2221/simplelanguage/expression/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/src/main/java/com/wangyao2221/simplelanguage/expression/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/src/main/java/com/wangyao2221/simplelanguage/expression/Multiply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/src/main/java/com/wangyao2221/simplelanguage/expression/Number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaVersion/src/main/java/com/wangyao2221/simplelanguage/expression/Variable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/Expression.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/Expression.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dsl/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/Main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/Statement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/Statement.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +103,10 @@
       <workItem from="1573132573816" duration="2633000" />
       <workItem from="1573140862638" duration="1265000" />
       <workItem from="1573174535654" duration="10384000" />
+      <workItem from="1573225752821" duration="3014000" />
+      <workItem from="1573314483779" duration="3625000" />
+      <workItem from="1573473374457" duration="599000" />
+      <workItem from="1573484186467" duration="1654000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -105,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573178226923</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="小步语义">
+      <created>1573225931653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573225931653</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,11 +146,12 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Statement If,Sequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Statement If,Sequence" />
+    <MESSAGE value="小步语义" />
+    <option name="LAST_COMMIT_MESSAGE" value="小步语义" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimpleLanguage@Number.rcov" NAME="Number Coverage Results" MODIFIED="1556176026319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/SimpleLanguage@Main.rcov" NAME="Main Coverage Results" MODIFIED="1556597718016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1573187357322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1573396530345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
   </component>
 </project>

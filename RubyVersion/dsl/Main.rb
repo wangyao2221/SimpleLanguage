@@ -46,15 +46,32 @@ require 'Statement'
 #
 # machine.run
 
-machine = Machine.new(
-       While.new(
-           LessThan.new(Variable.new(:x), Number.new(10)),
-           Sequence.new(
-                       Assignment.new(:x, Add.new(Variable.new(:x), Number.new(1))),
-                       Assignment.new(:y, Add.new(Variable.new(:y), Number.new(1)))
-           )
-       ),
-       {x: Number.new(0), y: Number.new(0)}
-)
+# machine = Machine.new(
+#        While.new(
+#            LessThan.new(Variable.new(:x), Number.new(10)),
+#            Sequence.new(
+#                        Assignment.new(:x, Add.new(Variable.new(:x), Number.new(1))),
+#                        Assignment.new(:y, Add.new(Variable.new(:y), Number.new(1)))
+#            )
+#        ),
+#        {x: Number.new(0), y: Number.new(0)}
+# )
+#
+# machine.run
 
-machine.run
+# proc = eval("-> { 5 }")
+# puts proc
+# puts proc.call()
+
+proc = -> x, y { x + y}
+puts proc.call(1, 2)
+
+# class Element < Struct.new(:val)
+#
+# end
+#
+# puts [Element.new(1), Element.new(2), Element.new(3)].map{|elem| elem.to_s}
+# puts [Element.new(1), Element.new(2), Element.new(3)].map(&:to_s)
+# puts [Element.new(1), Element.new(2), Element.new(3)].map(&1.method(:==))
+
+# puts [1,2,3] & [2,3,4]
