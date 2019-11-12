@@ -1,4 +1,8 @@
 class Number < Struct.new(:value)
+  def inspect
+    "<<#{self}>>"
+  end
+
   def evaluate(environment)
     self
   end

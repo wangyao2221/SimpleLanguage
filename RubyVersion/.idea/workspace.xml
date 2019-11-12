@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dsl/bigstepsemantic/Statement.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/semantic/denotational/Expression.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/semantic/denotational/Main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/semantic/denotational/Statement.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Expression.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/bigstepsemantic/Expression.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/bigstepsemantic/Main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Expression.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/bigstep/Expression.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/bigstep/Main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Statement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/bigstep/Statement.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Expression.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Expression.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Machine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Machine.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Statement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Statement.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +43,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dsl/bigstepsemantic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dsl/semantic/denotational" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,10 +53,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\semantic\denotational" />
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\bigstepsemantic" />
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\semantic" />
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\smallstepsemantic" />
     </key>
   </component>
@@ -65,18 +74,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.Main (1)">
+  <component name="RunManager" selected="Ruby.Main (2)">
     <configuration name="Main (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="SimpleLanguage" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/bigstepsemantic" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/semantic/bigstep" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/bigstepsemantic/Main.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/semantic/bigstep/Main.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main (2)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="SimpleLanguage" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/semantic/denotational" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/semantic/denotational/Main.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -90,12 +113,13 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/smallstepsemantic/Main.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/semantic/smallstep/Main.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.Main (2)" />
         <item itemvalue="Ruby.Main (1)" />
         <item itemvalue="Ruby.Main" />
       </list>
@@ -125,7 +149,8 @@
       <workItem from="1573314483779" duration="3625000" />
       <workItem from="1573473374457" duration="599000" />
       <workItem from="1573484186467" duration="2964000" />
-      <workItem from="1573518975226" duration="3621000" />
+      <workItem from="1573518975226" duration="9139000" />
+      <workItem from="1573569340145" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -148,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573487015115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish Big Step Semantic">
+      <created>1573522780005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573522780005</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,10 +206,12 @@
     <MESSAGE value="Statement If,Sequence" />
     <MESSAGE value="小步语义" />
     <MESSAGE value="Add Big Step Semantic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Big Step Semantic" />
+    <MESSAGE value="Finish Big Step Semantic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Big Step Semantic" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimpleLanguage@Number.rcov" NAME="Number Coverage Results" MODIFIED="1556176026319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1573564545826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/semantic/denotational" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/SimpleLanguage@Main.rcov" NAME="Main Coverage Results" MODIFIED="1556597718016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1573396530345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1573522712313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/bigstepsemantic" MODULE_NAME="SimpleLanguage" />
