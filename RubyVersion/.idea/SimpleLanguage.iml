@@ -7,5 +7,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.5, ruby-2.5.3-p105) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="treetop (v1.6.10, ruby-2.5.3-p105) [gem]" level="application" />
   </component>
 </module>

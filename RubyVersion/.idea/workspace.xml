@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dsl/semantic/denotational/Expression.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dsl/semantic/denotational/Main.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dsl/semantic/denotational/Statement.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/semantic/denotational/SimpleParser.treetop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SimpleLanguage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SimpleLanguage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Expression.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/bigstep/Expression.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/bigstep/Main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/bigstepsemantic/Statement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/bigstep/Statement.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Expression.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Expression.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Machine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Machine.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/smallstepsemantic/Statement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/smallstep/Statement.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/semantic/denotational/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/semantic/denotational/Main.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +42,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Ruby" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -150,7 +143,9 @@
       <workItem from="1573473374457" duration="599000" />
       <workItem from="1573484186467" duration="2964000" />
       <workItem from="1573518975226" duration="9139000" />
-      <workItem from="1573569340145" duration="818000" />
+      <workItem from="1573569340145" duration="2804000" />
+      <workItem from="1573657993492" duration="1305000" />
+      <workItem from="1573659752185" duration="483000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -180,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573522780005</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finish Denotational Semantic">
+      <created>1573571033847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573571033847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,11 +209,12 @@
     <MESSAGE value="小步语义" />
     <MESSAGE value="Add Big Step Semantic" />
     <MESSAGE value="Finish Big Step Semantic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish Big Step Semantic" />
+    <MESSAGE value="Finish Denotational Semantic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Denotational Semantic" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimpleLanguage@Number.rcov" NAME="Number Coverage Results" MODIFIED="1556176026319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1573564545826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/semantic/denotational" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1573659792845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/semantic/denotational" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/SimpleLanguage@Main.rcov" NAME="Main Coverage Results" MODIFIED="1556597718016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1573396530345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1573522712313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/bigstepsemantic" MODULE_NAME="SimpleLanguage" />

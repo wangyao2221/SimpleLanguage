@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'Expression'
 require 'Statement'
-
+require 'treetop'
 # proc = eval(Number.new(5).to_ruby)
 # puts proc.call({})
 #
@@ -33,10 +33,10 @@ require 'Statement'
 # proc = eval(statement.to_ruby)
 # puts proc.call({})
 
-statement = While.new(
-    LessThan.new(Variable.new(:x), Number.new(5)),
-    Assignment.new(:x, Multiply.new(Variable.new(:x), Number.new(3)))
-)
-puts statement.to_ruby
-proc = eval(statement.to_ruby)
-puts proc.call({x: 1})
+# statement = While.new(
+#     LessThan.new(Variable.new(:x), Number.new(5)),
+#     Assignment.new(:x, Multiply.new(Variable.new(:x), Number.new(3)))
+# )
+# puts statement.to_ruby
+# proc = eval(statement.to_ruby)
+# puts proc.call({x: 1})

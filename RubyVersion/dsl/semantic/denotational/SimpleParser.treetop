@@ -1,0 +1,13 @@
+grammar Simple
+    rule statement
+        while / assign
+    end
+
+    rule while
+        'while (' condition:expression ') {' body:statement ' }' {
+            def to_ast
+                While.new(condition.to_ast, body.to_ast)
+            end
+        }
+    end
+end
