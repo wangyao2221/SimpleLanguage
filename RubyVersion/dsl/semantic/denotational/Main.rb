@@ -2,6 +2,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'Expression'
 require 'Statement'
 require 'treetop'
+
 # proc = eval(Number.new(5).to_ruby)
 # puts proc.call({})
 #
@@ -40,3 +41,5 @@ require 'treetop'
 # puts statement.to_ruby
 # proc = eval(statement.to_ruby)
 # puts proc.call({x: 1})
+
+Treetop.load('simple.treetop')
