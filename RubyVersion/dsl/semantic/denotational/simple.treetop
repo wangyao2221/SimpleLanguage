@@ -35,7 +35,7 @@ grammar Simple
 
     rule multiply
         left:term ' * ' right:multiply {
-            det to_ast
+            def to_ast
                 Multiply.new(left.to_ast, right.to_ast)
             end
         }

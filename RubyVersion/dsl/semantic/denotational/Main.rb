@@ -42,4 +42,7 @@ require 'treetop'
 # proc = eval(statement.to_ruby)
 # puts proc.call({x: 1})
 
-Treetop.load('simple.treetop')
+Treetop.load('simple')
+parse_tree = SimpleParser.new.parse('x = 3')
+puts parse_tree.inspect
+# puts parse_tree.to_ast
