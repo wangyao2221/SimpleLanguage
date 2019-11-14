@@ -8,7 +8,7 @@ class DoNothing
   end
 end
 
-class Assignment < Struct.new(:name, :expression)
+class Assign < Struct.new(:name, :expression)
   def to_s
     "#{name} = #{expression} "
   end
@@ -23,7 +23,7 @@ class Assignment < Struct.new(:name, :expression)
 
   def reduce(environment)
     if expression.reducible?
-      [Assignment.new(name,expression.reduce(environment)),environment]
+      [Assign.new(name, expression.reduce(environment)), environment]
     else
       [DoNothing.new,environment.merge({name => expression})]
     end

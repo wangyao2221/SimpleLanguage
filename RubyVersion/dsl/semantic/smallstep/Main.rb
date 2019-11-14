@@ -18,7 +18,7 @@ require 'Statement'
 # machine = Machine.new(Multiply.new(Variable.new(:x), Variable.new(:y)),
 #                       {x: Number.new(3), y: Number.new(4)})
 
-# machine = Machine.new(Assignment.new(:x,Add.new(Variable.new(:x),Number.new(1))),
+# machine = Machine.new(Assign.new(:x,Add.new(Variable.new(:x),Number.new(1))),
 #                       {x: Number.new(2)}
 # )
 #
@@ -28,8 +28,8 @@ require 'Statement'
 # machine = Machine.new(
 #     If.new(
 #         LessThan.new(Number.new(1),Number.new(2)),
-#         Assignment.new(:x, Number.new(1)),
-#         Assignment.new(:x, Number.new(2))
+#         Assign.new(:x, Number.new(1)),
+#         Assign.new(:x, Number.new(2))
 #     ),
 #     {x: Number.new(0)}
 # )
@@ -38,8 +38,8 @@ require 'Statement'
 
 # machine = Machine.new(
 #        Sequence.new(
-#             Assignment.new(:x, Number.new(10)),
-#             Assignment.new(:y, Number.new(20))
+#             Assign.new(:x, Number.new(10)),
+#             Assign.new(:y, Number.new(20))
 #        ),
 #        {}
 # )
@@ -50,8 +50,8 @@ require 'Statement'
 #        While.new(
 #            LessThan.new(Variable.new(:x), Number.new(10)),
 #            Sequence.new(
-#                        Assignment.new(:x, Add.new(Variable.new(:x), Number.new(1))),
-#                        Assignment.new(:y, Add.new(Variable.new(:y), Number.new(1)))
+#                        Assign.new(:x, Add.new(Variable.new(:x), Number.new(1))),
+#                        Assign.new(:y, Add.new(Variable.new(:y), Number.new(1)))
 #            )
 #        ),
 #        {x: Number.new(0), y: Number.new(0)}

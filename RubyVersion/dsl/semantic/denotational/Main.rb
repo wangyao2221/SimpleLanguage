@@ -24,25 +24,28 @@ require 'treetop'
 # proc = eval(EQ.new(Number.new(2), Number.new(2)).to_ruby)
 # puts proc.call({})
 
-# statement = Assignment.new(:x, Number.new(1))
+# statement = Assign.new(:x, Number.new(1))
 # puts statement.to_ruby
 # proc = eval(statement.to_ruby)
 # puts proc.call({})
 
-# statement = Sequence.new(Assignment.new(:x, Number.new(1)), Assignment.new(:y, Number.new(2)))
+# statement = Sequence.new(Assign.new(:x, Number.new(1)), Assign.new(:y, Number.new(2)))
 # puts statement.to_ruby
 # proc = eval(statement.to_ruby)
 # puts proc.call({})
 
 # statement = While.new(
 #     LessThan.new(Variable.new(:x), Number.new(5)),
-#     Assignment.new(:x, Multiply.new(Variable.new(:x), Number.new(3)))
+#     Assign.new(:x, Multiply.new(Variable.new(:x), Number.new(3)))
 # )
 # puts statement.to_ruby
 # proc = eval(statement.to_ruby)
 # puts proc.call({x: 1})
 
-Treetop.load('simple')
-parse_tree = SimpleParser.new.parse('x = 3')
+# treetop要严格控制缩进，所有缩进要一直 wccccc
+Treetop.load'simple'
+parser = SimpleParser.new
+parse_tree = parser.parse('while (x < 5) { x = x * 3 }')
 puts parse_tree.inspect
+# parse_tree.to_ast
 # puts parse_tree.to_ast
