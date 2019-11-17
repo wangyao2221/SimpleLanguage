@@ -8,6 +8,6 @@ class FARule < Struct.new(:state, :character, :next_state)
   end
 
   def inspect
-    "#<FARule #{state.inspect} -- #{character} --> ##{next_state.inspect}>"
+    "#<FARule #{state.inspect} -- #{character} --> #{next_state.inspect}>"
   end
 end
