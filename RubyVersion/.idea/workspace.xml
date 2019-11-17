@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="" />
+    <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dsl/fa/FARule.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/fa/dfa/DFARuleBook.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +36,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\semantic" />
-      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\smallstepsemantic" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\semantic\denotational" />
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\bigstepsemantic" />
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\fa" />
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\semantic" />
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\smallstepsemantic" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -134,6 +139,8 @@
       <workItem from="1573657993492" duration="1305000" />
       <workItem from="1573659752185" duration="6745000" />
       <workItem from="1573739908099" duration="5588000" />
+      <workItem from="1573828912950" duration="139000" />
+      <workItem from="1574002637222" duration="408000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
