@@ -1,7 +1,8 @@
-require 'DFARuleBook'
+require '../FARule'
+
 class DFARuleBook < Struct.new(:rules)
   def next_state(state, character)
-
+    rule_for(state, character).follow
   end
 
   def rule_for(state, character)
