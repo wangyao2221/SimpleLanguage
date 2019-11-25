@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dsl/fa/nfa/Main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/fa/nfa/NFADesign.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/fa/nfa/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/fa/nfa/Main.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dsl/fa/nfa/NFA.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/fa/nfa/NFA.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dsl/fa/nfa/NFARuleBook.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/fa/nfa/NFARuleBook.rb" afterDir="false" />
     </list>
@@ -173,7 +174,8 @@
       <workItem from="1573828912950" duration="139000" />
       <workItem from="1574002637222" duration="1293000" />
       <workItem from="1574088230236" duration="3777000" />
-      <workItem from="1574260332277" duration="5229000" />
+      <workItem from="1574260332277" duration="7366000" />
+      <workItem from="1574689576425" duration="1912000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -266,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574261455395</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="NFA">
+      <created>1574265579654</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574265579654</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,10 +313,18 @@
     <MESSAGE value="NFA" />
     <option name="LAST_COMMIT_MESSAGE" value="NFA" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="RubyRunConfigurationType">
+        <watch expression="accept_states &amp; current_states" language="ruby" />
+        <watch expression="accept_states" language="ruby" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimpleLanguage@Number.rcov" NAME="Number Coverage Results" MODIFIED="1556176026319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1574088726794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/semantic/denotational" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main__4_.rcov" NAME="Main (4) Coverage Results" MODIFIED="1574265570835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__4_.rcov" NAME="Main (4) Coverage Results" MODIFIED="1574691485731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__3_.rcov" NAME="Main (3) Coverage Results" MODIFIED="1574091710973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/dfa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/SimpleLanguage@Main.rcov" NAME="Main Coverage Results" MODIFIED="1556597718016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1573396530345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />

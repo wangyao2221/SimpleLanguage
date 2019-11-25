@@ -1,6 +1,8 @@
+require 'Set'
+
 class NFA < Struct.new(:current_states, :accept_states, :rulebook)
   def accepting?
-    (accept_states & current_states).any?
+    (current_states & accept_states).any? # Set在前Array在后才能做交操作
   end
 
   def read_character(character)
@@ -11,5 +13,9 @@ class NFA < Struct.new(:current_states, :accept_states, :rulebook)
     string.chars.each do |character|
       read_character(character)
     end
+  end
+
+  def current_states
+    rulebook.follow_free_moves(super)
   end
 end
