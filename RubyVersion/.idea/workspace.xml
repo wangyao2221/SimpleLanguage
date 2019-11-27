@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dsl/fa/nfa/NFADesign.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/fa/regular/Main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/fa/regular/Pattern.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/fa/nfa/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/fa/nfa/Main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/fa/nfa/NFA.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/fa/nfa/NFA.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/fa/nfa/NFARuleBook.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/fa/nfa/NFARuleBook.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.Main (4)">
+  <component name="RunManager" selected="Ruby.Main (5)">
     <configuration name="Main (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="SimpleLanguage" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -118,27 +116,27 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="Main" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="Main (5)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="SimpleLanguage" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/fa/regular" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/semantic/smallstep/Main.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/fa/regular/Main.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.Main (5)" />
         <item itemvalue="Ruby.Main (4)" />
         <item itemvalue="Ruby.Main (3)" />
         <item itemvalue="Ruby.Main (2)" />
         <item itemvalue="Ruby.Main (1)" />
-        <item itemvalue="Ruby.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +173,8 @@
       <workItem from="1574002637222" duration="1293000" />
       <workItem from="1574088230236" duration="3777000" />
       <workItem from="1574260332277" duration="7366000" />
-      <workItem from="1574689576425" duration="1912000" />
+      <workItem from="1574689576425" duration="2415000" />
+      <workItem from="1574863286773" duration="2865000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -275,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574265579654</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="NFA Finish">
+      <created>1574691503125</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574691503125</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +317,8 @@
     <MESSAGE value="DFARuleBook" />
     <MESSAGE value="DFA finished" />
     <MESSAGE value="NFA" />
-    <option name="LAST_COMMIT_MESSAGE" value="NFA" />
+    <MESSAGE value="NFA Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="NFA Finish" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -329,5 +336,6 @@
     <SUITE FILE_PATH="coverage/SimpleLanguage@Main.rcov" NAME="Main Coverage Results" MODIFIED="1556597718016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1573396530345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1573522712313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/bigstepsemantic" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__5_.rcov" NAME="Main (5) Coverage Results" MODIFIED="1574869943212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/regular" MODULE_NAME="SimpleLanguage" />
   </component>
 </project>
