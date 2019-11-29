@@ -10,3 +10,4 @@ pattern = Repeat.new(
 )
 
 puts pattern
+puts pattern.matchs?('aaab')

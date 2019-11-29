@@ -1,0 +1,25 @@
+grammar Pattern
+    rule choose
+        first: '|' seconde
+    end
+
+    rule concatenate
+        first
+    end
+
+    rule empty
+        '' {
+            def to_ast
+                Empty.new
+            end
+        }
+    end
+
+    rule literal
+        [a-z] {
+            def to_ast
+                Literal.new(text_value)
+            end
+        }
+    end
+end

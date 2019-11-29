@@ -1,6 +1,7 @@
 require '../nfa/NFARuleBook'
 require '../nfa/NFADesign'
 require '../FARule'
+require '../nfa/NFA'
 
 module Pattern
   def bracket(outer_precedence)
@@ -126,11 +127,12 @@ class Repeat < Struct.new(:pattern)
     pattern_nfa_design = pattern.to_nfa_design
 
     start_state = Object.new
-    accept_states = start_state + pattern_nfa_design.accept_states
+    accept_states = [start_state] + pattern_nfa_design.accept_states
     rules = pattern_nfa_design.rulebook.rules
-    extract_rules = pattern_nfa_design.accept_states.map { |state| FARule.new(state, nil, pattern_nfa_design.start_state)}
-                    + [FARule.new(start_state, nil, pattern_nfa_design.start_state)]
-    rulebook = rules + extract_rules
+    extract_rules =
+        pattern_nfa_design.accept_states.map { |state| FARule.new(state, nil, pattern_nfa_design.start_state) } +
+            [FARule.new(start_state, nil, pattern_nfa_design.start_state)]
+    rulebook = NFARuleBook.new(rules + extract_rules)
 
     NFADesign.new(start_state, accept_states, rulebook)
   end
