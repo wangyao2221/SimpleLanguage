@@ -1,6 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'Pattern'
+require 'treetop'
 
 pattern = Repeat.new(
     Choose.new(
@@ -11,3 +12,8 @@ pattern = Repeat.new(
 
 puts pattern
 puts pattern.matchs?('aaab')
+
+Treetop.load'pattern'
+parser = PatternParser.new
+parse_tree = parser.parse('(a(|b))*')
+puts parse_tree.inspect

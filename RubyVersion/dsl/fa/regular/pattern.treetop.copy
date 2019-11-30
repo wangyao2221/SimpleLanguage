@@ -1,16 +1,14 @@
+优先级低的做为最上层的模式，因为最上层的模式是要让它下一层的模式解析完传递过来之后才进行解析的，也就是下一层优先级高的先执行，
+choose要可能匹配到空是因为他被brackets引用了，brackets是最后的匹配，所以要让它可能为空
 grammar Pattern
     rule choose
-        first:concatenate_or_empty '|' second:choose {
+        first:concatenate '|' second:choose {
             def to_ast
                 Choose.new(first.to_ast, second.to_ast)
             end
         }
         /
-        concatenate_or_empty
-    end
-
-    rule concatenate_or_empty
-        concatenate / empty
+        concatenate
     end
 
     rule concatenate
@@ -40,7 +38,7 @@ grammar Pattern
             end
         }
         /
-        literal
+        literal => 也可以放在choose上吧？ concatenate_or_empty_or_literal
     end
 
     rule empty
