@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dsl/fa/nfa2dfa/Main.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dsl/fa/nfa2dfa/NFA.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dsl/fa/nfa2dfa/NFADesign.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/dsl/fa/nfa2dfa/NFARuleBook.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/fa/nfa2dfa/NFASimulation.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/fa/nfa2dfa/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/fa/nfa2dfa/Main.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +189,8 @@
       <workItem from="1575039534090" duration="2917000" />
       <workItem from="1575120308410" duration="4151000" />
       <workItem from="1575213023050" duration="125000" />
-      <workItem from="1575384741718" duration="1872000" />
+      <workItem from="1575384741718" duration="2335000" />
+      <workItem from="1575469716307" duration="2161000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -344,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575213124277</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="nfa2dfa">
+      <created>1575387532520</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1575387532520</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +395,8 @@
     <MESSAGE value="正则表达式接入NFA" />
     <MESSAGE value="pattern语法解析器" />
     <MESSAGE value="pattern语法解析器 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="pattern语法解析器 test" />
+    <MESSAGE value="nfa2dfa" />
+    <option name="LAST_COMMIT_MESSAGE" value="nfa2dfa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575387444980">
@@ -397,30 +407,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="488" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1575041185352" />
-    <state x="385" y="14" key="CommitChangelistDialog2" timestamp="1575213120715">
+    <state x="385" y="14" key="CommitChangelistDialog2" timestamp="1575387530529">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="385" y="14" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575213120715" />
-    <state width="1103" height="213" key="GridCell.Tab.0.bottom" timestamp="1575387516823">
+    <state x="385" y="14" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575387530529" />
+    <state width="1102" height="213" key="GridCell.Tab.0.bottom" timestamp="1575473502759">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1103" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1575387516823" />
-    <state width="1103" height="213" key="GridCell.Tab.0.center" timestamp="1575387516823">
+    <state width="1102" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1575473502759" />
+    <state width="1102" height="213" key="GridCell.Tab.0.center" timestamp="1575473502759">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1103" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1575387516823" />
-    <state width="1103" height="213" key="GridCell.Tab.0.left" timestamp="1575387516823">
+    <state width="1102" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1575473502759" />
+    <state width="1102" height="213" key="GridCell.Tab.0.left" timestamp="1575473502759">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1103" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1575387516823" />
-    <state width="1103" height="213" key="GridCell.Tab.0.right" timestamp="1575387516823">
+    <state width="1102" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1575473502759" />
+    <state width="1102" height="213" key="GridCell.Tab.0.right" timestamp="1575473502759">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1103" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1575387516823" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575213127113">
+    <state width="1102" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1575473502759" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575387534648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575213127113" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575387534648" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -440,7 +450,7 @@
     <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1574088726794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/semantic/denotational" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__4_.rcov" NAME="Main (4) Coverage Results" MODIFIED="1574691485731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__3_.rcov" NAME="Main (3) Coverage Results" MODIFIED="1574091710973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/dfa" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1575387513920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa2dfa" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1575473489022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa2dfa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__5_.rcov" NAME="Main (5) Coverage Results" MODIFIED="1575129735556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/regular" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/SimpleLanguage@Main.rcov" NAME="Main Coverage Results" MODIFIED="1556597718016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
   </component>

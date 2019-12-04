@@ -4,6 +4,7 @@ require 'NFA'
 require 'NFARuleBook'
 require 'Set'
 require 'NFADesign'
+require 'NFASimulation'
 
 # rulebook = NFARuleBook.new([
 #    FARule.new(1, 'a', 1), FARule.new(1, 'b', 1),
@@ -47,3 +48,10 @@ rulebook = NFARuleBook.new([
 nfa_design = NFADesign.new(1, [3], rulebook)
 puts nfa_design.to_nfa.current_states
 puts nfa_design.to_nfa(Set[2]).current_states
+
+puts simulation = NFASimulation.new(nfa_design)
+puts simulation.next_state(Set[1,2], 'a')
+puts simulation.next_state(Set[1,2], 'b')
+puts simulation.next_state(Set[3,2], 'b')
+puts simulation.next_state(Set[1,3,2], 'b')
+puts simulation.next_state(Set[1,3,2], 'a')
