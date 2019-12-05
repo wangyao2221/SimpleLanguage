@@ -55,3 +55,7 @@ puts simulation.next_state(Set[1,2], 'b')
 puts simulation.next_state(Set[3,2], 'b')
 puts simulation.next_state(Set[1,3,2], 'b')
 puts simulation.next_state(Set[1,3,2], 'a')
+
+start_state = nfa_design.to_nfa.current_states
+puts start_state
+puts simulation.discover_states_and_rules(Set[start_state])
