@@ -14,7 +14,7 @@ class NFASimulation < Struct.new(:nfa_design)
     if more_states.subset?(states)
       [states, rules]
     else
-      discover_states_and_rules(states)
+      discover_states_and_rules(more_states)
     end
   end
 end
