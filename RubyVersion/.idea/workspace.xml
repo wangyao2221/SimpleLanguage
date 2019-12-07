@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dsl/pda/dpda/Main.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dsl/pda/dpda/PDAConfiguration.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dsl/pda/dpda/PDARule.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dsl/pda/dpda/Stack.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/pda/Main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/pda/dpda/DPDA.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/pda/dpda/DPDARuleBook.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/pda/dpda/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/dpda/Main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/pda/dpda/PDAConfiguration.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/PDAConfiguration.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/pda/dpda/PDARule.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/PDARule.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/pda/dpda/Stack.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/Stack.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\pda" />
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\pda\dpda" />
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\fa" />
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\semantic" />
+      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\smallstepsemantic" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\fa" />
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\fa\regular" />
@@ -49,13 +59,8 @@
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\bigstepsemantic" />
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\fa" />
-      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\semantic" />
-      <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\smallstepsemantic" />
-    </key>
   </component>
-  <component name="RunManager" selected="Ruby.Main (1)">
+  <component name="RunManager" selected="Ruby.Main (2)">
     <configuration name="Main (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="SimpleLanguage" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -66,21 +71,21 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/pda/dpda/Main.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/pda/Main.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="Main (3)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="Main (2)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="SimpleLanguage" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/fa/dfa" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/pda/dpda" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/fa/dfa/Main.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/pda/dpda/Main.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -128,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.Main (2)" />
         <item itemvalue="Ruby.Main (1)" />
         <item itemvalue="Ruby.Main" />
         <item itemvalue="Ruby.Main (5)" />
         <item itemvalue="Ruby.Main (4)" />
-        <item itemvalue="Ruby.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +196,8 @@
       <workItem from="1575384741718" duration="2335000" />
       <workItem from="1575469716307" duration="2452000" />
       <workItem from="1575557131491" duration="5048000" />
-      <workItem from="1575632719054" duration="5238000" />
+      <workItem from="1575632719054" duration="5361000" />
+      <workItem from="1575726846915" duration="1952000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -375,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575636388107</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="DPDA Configuration、Rule">
+      <created>1575638119006</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1575638119006</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +432,8 @@
     <MESSAGE value="pattern语法解析器 test" />
     <MESSAGE value="nfa2dfa" />
     <MESSAGE value="NFASimulation.rb" />
-    <option name="LAST_COMMIT_MESSAGE" value="NFASimulation.rb" />
+    <MESSAGE value="DPDA Configuration、Rule" />
+    <option name="LAST_COMMIT_MESSAGE" value="DPDA Configuration、Rule" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575387444980">
@@ -430,30 +444,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="488" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1575041185352" />
-    <state x="385" y="14" key="CommitChangelistDialog2" timestamp="1575636386226">
+    <state x="693" y="29" key="CommitChangelistDialog2" timestamp="1575638117790">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="385" y="14" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575636386226" />
-    <state width="1099" height="213" key="GridCell.Tab.0.bottom" timestamp="1575638084374">
+    <state x="693" y="29" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575638117790" />
+    <state width="1098" height="213" key="GridCell.Tab.0.bottom" timestamp="1575728808366">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1099" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1575638084374" />
-    <state width="1099" height="213" key="GridCell.Tab.0.center" timestamp="1575638084374">
+    <state width="1098" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1575728808366" />
+    <state width="1098" height="213" key="GridCell.Tab.0.center" timestamp="1575728808366">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1099" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1575638084374" />
-    <state width="1099" height="213" key="GridCell.Tab.0.left" timestamp="1575638084374">
+    <state width="1098" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1575728808366" />
+    <state width="1098" height="213" key="GridCell.Tab.0.left" timestamp="1575728808366">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1099" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1575638084374" />
-    <state width="1099" height="213" key="GridCell.Tab.0.right" timestamp="1575638084374">
+    <state width="1098" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1575728808366" />
+    <state width="1098" height="213" key="GridCell.Tab.0.right" timestamp="1575728808366">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1099" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1575638084374" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575636392222">
+    <state width="1098" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1575728808366" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1575638120001">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575636392222" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575638120001" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1575637234462">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -473,8 +487,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimpleLanguage@Number.rcov" NAME="Number Coverage Results" MODIFIED="1556176026319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1575638080368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/dpda" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1574088726794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/semantic/denotational" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1575728459454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/dpda" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1575728741728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/dpda" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__4_.rcov" NAME="Main (4) Coverage Results" MODIFIED="1574691485731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__3_.rcov" NAME="Main (3) Coverage Results" MODIFIED="1574091710973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/dfa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1575636262614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa2dfa" MODULE_NAME="SimpleLanguage" />

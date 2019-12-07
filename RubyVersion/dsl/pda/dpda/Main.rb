@@ -1,17 +1,11 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
-require 'Stack'
-require 'PDARule'
-require 'PDAConfiguration'
+require 'DPDARuleBook'
+require '../PDAConfiguration'
+require '../Stack'
+require '../PDARule'
 
-#stack = Stack.new(['a','b','c','d','e','f','g'])
-#puts stack.inspect
-#puts stack.top
-#puts stack.pop.inspect
-#puts stack.pop.top
-#puts stack.push('x').inspect
-
-stack = Stack.new(['b', 'b'])
-configuration = PDAConfiguration.new('1', stack)
-rule = PDARule.new('1', '(', '2', 'b', 'b')
-puts rule.applies_to?(configuration, ')')
+configuration = PDAConfiguration.new('1', Stack.new(['$']))
+rule = PDARule.new('1', '(', '2', '$', ['b', '$'])
+rulebook = DPDARuleBook.new([rule])
+puts rulebook.next_state(configuration, '(')
