@@ -5,6 +5,7 @@ require '../PDAConfiguration'
 require '../Stack'
 require '../PDARule'
 require 'DPDA'
+require 'DPDADesign'
 
 configuration = PDAConfiguration.new(1, Stack.new(['$']))
 rule = PDARule.new(1, '(', 2, '$', ['b', '$'])
@@ -21,4 +22,7 @@ puts dpda.accepting?
 puts dpda.current_configuration
 
 configuration = PDAConfiguration.new(2, Stack.new(['$']))
-rulebook.follow_free_moves(configuration)
+puts rulebook.follow_free_moves(configuration)
+
+dpda_design = DPDADesign.new(2, '$', [1], rulebook)
+puts dpda_design.accepting?('(())') # error

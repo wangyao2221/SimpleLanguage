@@ -8,7 +8,7 @@ class DPDARuleBook < Struct.new(:rules)
   end
 
   def applies_to?(configuration, character)
-    !rule_for(character, character).nil?
+    !rule_for(configuration, character).nil?
   end
 
   def follow_free_moves(configuration)
