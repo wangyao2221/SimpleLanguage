@@ -6,6 +6,6 @@ class PDAConfiguration < Struct.new(:state, :stack)
   end
 
   def stuck?
-    state = STUCK_STATE
+    state == STUCK_STATE
   end
 end

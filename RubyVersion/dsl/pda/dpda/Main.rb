@@ -25,4 +25,4 @@ configuration = PDAConfiguration.new(2, Stack.new(['$']))
 puts rulebook.follow_free_moves(configuration)
 
 dpda_design = DPDADesign.new(2, '$', [1], rulebook)
-puts dpda_design.accepting?('(())') # error
+puts dpda_design.accepting?('((a))') # error
