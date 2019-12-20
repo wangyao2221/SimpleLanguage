@@ -20,7 +20,9 @@ class LexicalAnalyzer < Struct.new(:string)
 
   def analyze
     [].tap do |tokens|
-      tokens.push(next_token)
+      while more_tokens?
+        tokens.push(next_token)
+      end
     end
   end
 
@@ -30,7 +32,7 @@ class LexicalAnalyzer < Struct.new(:string)
 
   def next_token
     rule, match = rule_matching(string)
-    self.string = string(match)
+    self.string = string_after(match)
     rule[:token]
   end
 
