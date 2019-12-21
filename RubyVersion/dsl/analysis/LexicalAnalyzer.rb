@@ -48,7 +48,7 @@ class LexicalAnalyzer < Struct.new(:string)
   end
 
   def rule_with_longest_match(rules_with_matches)
-    rules_with_matches.max_by {|rule, match| match.to_s.length}
+    rules_with_matches.max_by {|rule, match| match.to_s.length} # 这一条为了区分形如if_var包含关键字的变量名
   end
 
   def string_after(match)
