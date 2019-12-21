@@ -43,7 +43,8 @@ class LexicalAnalyzer < Struct.new(:string)
   end
 
   def match_at_beginning(pattern, string)
-    /\A#{pattern}/.match(string)
+    #/A#{pattern}/.match(string)
+    /^#{pattern}/.match(string)
   end
 
   def rule_with_longest_match(rules_with_matches)

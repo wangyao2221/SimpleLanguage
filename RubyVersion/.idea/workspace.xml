@@ -202,7 +202,8 @@
       <workItem from="1576594030450" duration="538000" />
       <workItem from="1576594773983" duration="714000" />
       <workItem from="1576672730059" duration="5093000" />
-      <workItem from="1576853478097" duration="1621000" />
+      <workItem from="1576853478097" duration="1721000" />
+      <workItem from="1576939635339" duration="2947000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -449,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576683601685</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="LexicalAnalyzer">
+      <created>1576855205415</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1576855205415</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,34 +516,34 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="488" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1575041185352" />
-    <state x="693" y="29" key="CommitChangelistDialog2" timestamp="1576683599860">
+    <state x="693" y="29" key="CommitChangelistDialog2" timestamp="1576855202233">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="693" y="29" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1576683599860" />
+    <state x="693" y="29" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1576855202233" />
     <state x="294" y="80" key="DiffContextDialog" timestamp="1576338770633">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="294" y="80" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1576338770633" />
-    <state width="1091" height="247" key="GridCell.Tab.0.bottom" timestamp="1576855189314">
+    <state width="1090" height="247" key="GridCell.Tab.0.bottom" timestamp="1576943136655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1092" height="113" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1091" height="247" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1576855189314" />
-    <state width="1091" height="247" key="GridCell.Tab.0.center" timestamp="1576855189314">
+    <state width="1090" height="247" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1576943136655" />
+    <state width="1090" height="247" key="GridCell.Tab.0.center" timestamp="1576943136655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1092" height="113" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1091" height="247" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1576855189314" />
-    <state width="1091" height="247" key="GridCell.Tab.0.left" timestamp="1576855189314">
+    <state width="1090" height="247" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1576943136654" />
+    <state width="1090" height="247" key="GridCell.Tab.0.left" timestamp="1576943136654">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1092" height="113" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1091" height="247" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1576855189314" />
-    <state width="1091" height="247" key="GridCell.Tab.0.right" timestamp="1576855189314">
+    <state width="1090" height="247" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1576943136654" />
+    <state width="1090" height="247" key="GridCell.Tab.0.right" timestamp="1576943136655">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1092" height="113" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1091" height="247" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1576855189314" />
+    <state width="1090" height="247" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1576943136655" />
     <state width="997" height="264" key="GridCell.Tab.1.bottom" timestamp="1575945924590">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -552,10 +560,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="997" height="264" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1575945924590" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1576683603750">
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1576855207309">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1576683603750" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1576855207309" />
     <state x="431" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1576338652383">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -578,7 +586,7 @@
     <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1575728459454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/dpda" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1576683432621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/dpda" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__4_.rcov" NAME="Main (4) Coverage Results" MODIFIED="1574691485731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main__3_.rcov" NAME="Main (3) Coverage Results" MODIFIED="1576854233472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/analysis" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__3_.rcov" NAME="Main (3) Coverage Results" MODIFIED="1576943134791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/analysis" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main.rcov" NAME="Main Coverage Results" MODIFIED="1575636262614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/nfa2dfa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__5_.rcov" NAME="Main (5) Coverage Results" MODIFIED="1575129735556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/fa/regular" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/SimpleLanguage@Main.rcov" NAME="Main Coverage Results" MODIFIED="1556597718016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
