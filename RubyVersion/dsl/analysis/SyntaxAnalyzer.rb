@@ -1,5 +1,6 @@
 require '../pda/PDARule'
 
+start_rule = PDARule.new(1, nil, 2, '$', ['S', '$'])
 symbol_rules = [
     # <statement> ::= <while> | <assign>
     PDARule.new(2, nil, 2, 'S', ['W']),
@@ -26,3 +27,9 @@ symbol_rules = [
     PDARule.new(2, nil, 2, 'T', ['n']),
     PDARule.new(2, nil, 2, 'T', ['v'])
 ]
+token_rules = LexicalAnalyzer::GRAMMAR.map do |rule|
+  PDARule.new(2, rule[:token], 2, rule[:token], [])
+end
+stop_rule = PDARule.new(2, nil, 3, '$', ['$'])
+
+

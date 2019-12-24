@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dsl/analysis/SyntaxAnalyzer.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/analysis/SyntaxAnalyzer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/analysis/SyntaxAnalyzer.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +204,8 @@
       <workItem from="1576672730059" duration="5093000" />
       <workItem from="1576853478097" duration="1721000" />
       <workItem from="1576939635339" duration="6423000" />
-      <workItem from="1577114017955" duration="1210000" />
+      <workItem from="1577114017955" duration="1846000" />
+      <workItem from="1577197579479" duration="2091000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -479,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576943984584</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="SyntaxAnalyzer">
+      <created>1577115682657</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1577115682657</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +510,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Statement If,Sequence" />
     <MESSAGE value="小步语义" />
     <MESSAGE value="Add Big Step Semantic" />
     <MESSAGE value="Finish Big Step Semantic" />
@@ -527,7 +534,8 @@
     <MESSAGE value="DPDARuleBook" />
     <MESSAGE value="DPDA Finish" />
     <MESSAGE value="LexicalAnalyzer" />
-    <option name="LAST_COMMIT_MESSAGE" value="LexicalAnalyzer" />
+    <MESSAGE value="SyntaxAnalyzer" />
+    <option name="LAST_COMMIT_MESSAGE" value="SyntaxAnalyzer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575387444980">
@@ -538,10 +546,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="488" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1575041185352" />
-    <state x="693" y="29" key="CommitChangelistDialog2" timestamp="1576943983345">
+    <state x="693" y="29" key="CommitChangelistDialog2" timestamp="1577115679857">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="693" y="29" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1576943983345" />
+    <state x="693" y="29" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577115679857" />
     <state x="294" y="80" key="DiffContextDialog" timestamp="1576338770633">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -586,10 +594,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="997" height="264" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1575945924590" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1576943986113">
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1577115690468">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1576943986113" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577115690468" />
     <state x="431" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1576338652383">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
