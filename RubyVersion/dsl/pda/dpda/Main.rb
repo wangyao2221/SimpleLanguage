@@ -26,3 +26,19 @@ puts rulebook.follow_free_moves(configuration)
 
 dpda_design = DPDADesign.new(2, '$', [1], rulebook)
 puts dpda_design.accepting?('((a))') # error
+
+# DPDA 引入 NPDA
+rulebook = DPDARuleBook.new([PDARule.new(1, 'a', 2, '$', ['a', '$']),
+                             PDARule.new(1, 'b', 2, '$', ['b', '$']),
+                             PDARule.new(2, 'a', 2, 'a', ['a', 'a']),
+                             PDARule.new(2, 'b', 2, 'b', ['b', 'b']),
+                             PDARule.new(2, 'a', 2, 'b', []),
+                             PDARule.new(2, 'b', 2, 'a', []),
+                             PDARule.new(2, nil, 1, '$', ['$'])
+                            ])
+
+# DPDA 引入 NDPA
+dpda_design = DPDADesign.new(1, '$', [1], rulebook)
+puts dpda_design.accepting?('ababab')
+puts dpda_design.accepting?('bbbaaaab')
+puts dpda_design.accepting?('baa')
