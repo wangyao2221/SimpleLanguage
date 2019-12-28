@@ -1,7 +1,7 @@
-class NDPARuleBook <Struct.new(:rules)
+class NPDARuleBook < Struct.new(:rules)
   def next_configurations(configurations, character)
-    #configurations.flat_map { |config| follow_rules_for(config, character)}.to_set
-    configurations.map { |config| follow_rules_for(config, character)}.to_set # 实验map是否可行
+    configurations.flat_map { |config| follow_rules_for(config, character)}.to_set
+    #configurations.map { |config| follow_rules_for(config, character)}.to_set # 实验map是否可行
   end
 
   def follow_rules_for(configuration, character)
@@ -15,7 +15,7 @@ class NDPARuleBook <Struct.new(:rules)
   def follow_free_moves(configurations)
     more_configurations = next_configurations(configurations, nil)
 
-    if more_configurations.sub_set?(configurations)
+    if more_configurations.subset?(configurations)
       follow_free_moves(configurations + more_configurations)
     else
       configurations
