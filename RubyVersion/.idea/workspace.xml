@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dsl/pda/ndpa/NPDA.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/pda/ndpa/NPDARuleBook.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/pda/dpda/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/dpda/Main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsl/pda/dpda/DPDA.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/dpda/DPDA.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +210,8 @@
       <workItem from="1577197579479" duration="2714000" />
       <workItem from="1577281292106" duration="1766000" />
       <workItem from="1577287996652" duration="1053000" />
-      <workItem from="1577371324281" duration="2073000" />
+      <workItem from="1577371324281" duration="2337000" />
+      <workItem from="1577499050949" duration="3226000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -504,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577289044601</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="DPDA识别回文">
+      <created>1577374480258</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1577374480258</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +537,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Add Big Step Semantic" />
     <MESSAGE value="Finish Big Step Semantic" />
     <MESSAGE value="Finish Denotational Semantic" />
     <MESSAGE value="Simple Parser" />
@@ -552,7 +561,8 @@
     <MESSAGE value="LexicalAnalyzer" />
     <MESSAGE value="SyntaxAnalyzer" />
     <MESSAGE value="NDPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="NDPA" />
+    <MESSAGE value="DPDA识别回文" />
+    <option name="LAST_COMMIT_MESSAGE" value="DPDA识别回文" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575387444980">
@@ -563,38 +573,38 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="488" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1575041185352" />
-    <state x="693" y="29" key="CommitChangelistDialog2" timestamp="1577289041575">
+    <state x="693" y="29" key="CommitChangelistDialog2" timestamp="1577374477421">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="693" y="29" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577289041575" />
+    <state x="693" y="29" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577374477421" />
     <state x="294" y="80" key="DiffContextDialog" timestamp="1576338770633">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="294" y="80" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1576338770633" />
-    <state width="1086" height="196" key="GridCell.Tab.0.bottom" timestamp="1577374463966">
+    <state width="1086" height="196" key="GridCell.Tab.0.bottom" timestamp="1577374521648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1086" height="196" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577374463966" />
-    <state width="1086" height="196" key="GridCell.Tab.0.center" timestamp="1577374463966">
+    <state width="1086" height="196" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577374521648" />
+    <state width="1086" height="196" key="GridCell.Tab.0.center" timestamp="1577374521648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1086" height="196" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577374463966" />
-    <state width="1086" height="196" key="GridCell.Tab.0.left" timestamp="1577374463966">
+    <state width="1086" height="196" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577374521648" />
+    <state width="1086" height="196" key="GridCell.Tab.0.left" timestamp="1577374521648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1086" height="196" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577374463966" />
-    <state width="1086" height="196" key="GridCell.Tab.0.right" timestamp="1577374463966">
+    <state width="1086" height="196" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577374521648" />
+    <state width="1086" height="196" key="GridCell.Tab.0.right" timestamp="1577374521648">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1086" height="196" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577374463966" />
+    <state width="1086" height="196" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577374521648" />
     <state width="997" height="264" key="GridCell.Tab.1.bottom" timestamp="1575945924590">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -611,10 +621,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="997" height="264" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1575945924590" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1577289047290">
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1577374493587">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577289047290" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577374493587" />
     <state x="431" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1577372877810">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

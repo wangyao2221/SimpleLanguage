@@ -3,6 +3,8 @@ class DPDA < Struct.new(:current_configuration, :accept_states, :rulebook)
     accept_states.include?(current_configuration.state)
   end
 
+  # NPDA里没有next_configurations,对比一下原因在于applies_to?,NDPA的next_configurations没有就是空寂，不需要applies_to?去判断
+  # 所以NDPA直接使用read_character,DPDA封装了一层,使逻辑更清晰
   def next_configuration(character)
     #self.current_configuration = rulebook.next_configuration(current_configuration, character) V1.0 假设它总能找到可用的规则，所以没有规则可用时会报错
     if rulebook.applies_to?(current_configuration, character)
