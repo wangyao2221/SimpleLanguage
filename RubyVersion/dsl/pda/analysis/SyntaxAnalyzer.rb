@@ -1,4 +1,11 @@
-require '../pda/PDARule'
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
+require '../PDARule'
+require '../ndpa/NPDARuleBook'
+require '../ndpa/NPDADesign'
+require 'LexicalAnalyzer'
+require '../ndpa/NPDA'
+require '../PDAConfiguration'
 
 start_rule = PDARule.new(1, nil, 2, '$', ['S', '$'])
 symbol_rules = [
@@ -7,7 +14,7 @@ symbol_rules = [
     PDARule.new(2, nil, 2, 'S', ['A']),
 
     # <while> ::= "w" "(" <expression> ")" "{" <statement> "}"
-    PDARule.new(2, nil, 2, 'W', ['W', '(', 'E', ')', '{', 'S', '}']),
+    PDARule.new(2, nil, 2, 'W', ['w', '(', 'E', ')', '{', 'S', '}']),
 
     # <assign> ::= "v" "=" <expression>
     PDARule.new(2, nil, 2, 'A', ['v', '=', 'E']),
@@ -31,5 +38,10 @@ token_rules = LexicalAnalyzer::GRAMMAR.map do |rule|
   PDARule.new(2, rule[:token], 2, rule[:token], [])
 end
 stop_rule = PDARule.new(2, nil, 3, '$', ['$'])
-
-
+rulebook = NPDARuleBook.new([start_rule, stop_rule] + symbol_rules + token_rules)
+puts rulebook
+npda_design = NPDADesign.new(1, '$', [3], rulebook)
+token_string = LexicalAnalyzer.new('while (x < 5) { x = x * 3 }').analyze.join
+puts token_string
+puts npda_design.accepts?(token_string)
+puts npda_design.accepts?(LexicalAnalyzer.new('while (x < 5 x = x * }').analyze.join)

@@ -33,7 +33,7 @@ puts npda.current_configurations
 puts
 
 npda_design = NPDADesign.new(1, '$', [3], rulebook)
-puts npda_design.accepting?('abba')
-puts npda_design.accepting?('babbaabbab')
-puts npda_design.accepting?('abb')
-puts npda_design.accepting?('baabaa')
+puts npda_design.accepts?('abba')
+puts npda_design.accepts?('babbaabbab')
+puts npda_design.accepts?('abb')
+puts npda_design.accepts?('baabaa')

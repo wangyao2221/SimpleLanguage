@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
 require 'NPDA'
 require 'NPDARuleBook'
 require '../PDAConfiguration'
@@ -5,7 +7,7 @@ require '../Stack'
 require 'Set'
 
 class NPDADesign < Struct.new(:start_state, :bottom_character, :accept_states, :rulebook)
-  def accepting?(string)
+  def accepts?(string)
     to_npda.tap { |npda| npda.read_string(string) }.accepting?
   end
 
