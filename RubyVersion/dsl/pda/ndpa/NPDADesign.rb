@@ -2,6 +2,7 @@ require 'NPDA'
 require 'NPDARuleBook'
 require '../PDAConfiguration'
 require '../Stack'
+require 'Set'
 
 class NPDADesign < Struct.new(:start_state, :bottom_character, :accept_states, :rulebook)
   def accepting?(string)
@@ -11,6 +12,7 @@ class NPDADesign < Struct.new(:start_state, :bottom_character, :accept_states, :
   def to_npda
     start_stack = Stack.new([bottom_character])
     start_configuration = PDAConfiguration.new(start_state, start_stack)
-    NPDA.new(start_configuration, accept_states, rulebook)
+    # 注意要用 Set[]
+    NPDA.new(Set[start_configuration], accept_states, rulebook)
   end
 end
