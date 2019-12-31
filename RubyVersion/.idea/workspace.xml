@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40f7e322-f833-41bd-8180-5b5e05a9e262" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dsl/tm/Main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dsl/tm/Tape.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/analysis/LexicalAnalyzer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/analysis/LexicalAnalyzer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/analysis/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/analysis/Main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/analysis/SyntaxAnalyzer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/analysis/SyntaxAnalyzer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/pda/ndpa/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/ndpa/Main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsl/pda/ndpa/NPDADesign.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dsl/pda/ndpa/NPDADesign.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +55,18 @@
       <recent name="D:\Workspace\Ruby\SimpleLanguage\RubyVersion\dsl\smallstepsemantic" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.SyntaxAnalyzer (1)">
-    <configuration name="Main (2)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+  <component name="RunManager" selected="Ruby.Main (1)">
+    <configuration name="Main (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="SimpleLanguage" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/pda/dpda" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/dsl/tm" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/pda/dpda/Main.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/dsl/tm/Main.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -131,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.Main (1)" />
         <item itemvalue="Ruby.SyntaxAnalyzer (1)" />
         <item itemvalue="Ruby.Main" />
         <item itemvalue="Ruby.SyntaxAnalyzer" />
         <item itemvalue="Ruby.Main (4)" />
-        <item itemvalue="Ruby.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +212,8 @@
       <workItem from="1577371324281" duration="2337000" />
       <workItem from="1577499050949" duration="3864000" />
       <workItem from="1577544081746" duration="2997000" />
-      <workItem from="1577627182002" duration="4478000" />
+      <workItem from="1577627182002" duration="4610000" />
+      <workItem from="1577803829504" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="Statement If,Sequence">
       <created>1573178226923</created>
@@ -539,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577629881539</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="SyntaxAnalyzer.rb">
+      <created>1577631702888</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1577631702888</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +567,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Simple Parser" />
     <MESSAGE value="simple.treetop" />
     <MESSAGE value="load SimpleParser" />
     <MESSAGE value="SimpleParser success!" />
@@ -587,7 +591,8 @@
     <MESSAGE value="DPDA识别回文" />
     <MESSAGE value="NPDA" />
     <MESSAGE value="    if more_configurations.subset?(configurations)&#10;      configurations&#10;    else&#10;      follow_free_moves(configurations + more_configurations)&#10;    end&#10;    &#10;      def to_npda&#10;        start_stack = Stack.new([bottom_character])&#10;        start_configuration = PDAConfiguration.new(start_state, start_stack)&#10;        # 注意要用 Set[]&#10;        NPDA.new(Set[start_configuration], accept_states, rulebook)&#10;      end" />
-    <option name="LAST_COMMIT_MESSAGE" value="    if more_configurations.subset?(configurations)&#10;      configurations&#10;    else&#10;      follow_free_moves(configurations + more_configurations)&#10;    end&#10;    &#10;      def to_npda&#10;        start_stack = Stack.new([bottom_character])&#10;        start_configuration = PDAConfiguration.new(start_state, start_stack)&#10;        # 注意要用 Set[]&#10;        NPDA.new(Set[start_configuration], accept_states, rulebook)&#10;      end" />
+    <MESSAGE value="SyntaxAnalyzer.rb" />
+    <option name="LAST_COMMIT_MESSAGE" value="SyntaxAnalyzer.rb" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575387444980">
@@ -598,62 +603,62 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="488" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1575041185352" />
-    <state x="249" y="30" width="1222" height="804" key="CommitChangelistDialog2" timestamp="1577631690535">
+    <state x="249" y="30" width="1222" height="804" key="CommitChangelistDialog2" timestamp="1577631701485">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="249" y="30" width="1222" height="804" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577631690535" />
+    <state x="249" y="30" width="1222" height="804" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577631701485" />
     <state x="294" y="80" key="DiffContextDialog" timestamp="1576338770633">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="294" y="80" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1576338770633" />
-    <state width="1327" height="205" key="GridCell.Tab.0.bottom" timestamp="1577631669960">
+    <state width="1326" height="205" key="GridCell.Tab.0.bottom" timestamp="1577805120342">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.bottom/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1327" height="205" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577631669960" />
-    <state width="1327" height="205" key="GridCell.Tab.0.center" timestamp="1577631669960">
+    <state width="1326" height="205" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577805120342" />
+    <state width="1326" height="205" key="GridCell.Tab.0.center" timestamp="1577805120342">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.center/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1327" height="205" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577631669960" />
-    <state width="1327" height="205" key="GridCell.Tab.0.left" timestamp="1577631669960">
+    <state width="1326" height="205" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1577805120342" />
+    <state width="1326" height="205" key="GridCell.Tab.0.left" timestamp="1577805120342">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.left/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1327" height="205" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577631669960" />
-    <state width="1327" height="205" key="GridCell.Tab.0.right" timestamp="1577631669960">
+    <state width="1326" height="205" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1577805120342" />
+    <state width="1326" height="205" key="GridCell.Tab.0.right" timestamp="1577805120342">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1368" height="132" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1577063813079" />
     <state width="1092" height="113" key="GridCell.Tab.0.right/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1576762063342" />
-    <state width="1327" height="205" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577631669960" />
-    <state width="1251" height="149" key="GridCell.Tab.1.bottom" timestamp="1577631640575">
+    <state width="1326" height="205" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1577805120342" />
+    <state width="1251" height="149" key="GridCell.Tab.1.bottom" timestamp="1577631800710">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1251" height="149" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577631640575" />
-    <state width="1251" height="149" key="GridCell.Tab.1.center" timestamp="1577631640575">
+    <state width="1251" height="149" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1577631800710" />
+    <state width="1251" height="149" key="GridCell.Tab.1.center" timestamp="1577631800710">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1251" height="149" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1577631640575" />
-    <state width="1251" height="149" key="GridCell.Tab.1.left" timestamp="1577631640575">
+    <state width="1251" height="149" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1577631800710" />
+    <state width="1251" height="149" key="GridCell.Tab.1.left" timestamp="1577631800710">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1251" height="149" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1577631640575" />
-    <state width="1251" height="149" key="GridCell.Tab.1.right" timestamp="1577631640575">
+    <state width="1251" height="149" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1577631800710" />
+    <state width="1251" height="149" key="GridCell.Tab.1.right" timestamp="1577631800710">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1251" height="149" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577631640575" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1577629885433">
+    <state width="1251" height="149" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1577631800710" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1577631704102">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577629885433" />
-    <state x="431" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1577372877810">
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577631704102" />
+    <state x="431" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1577804808033">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="154" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1577372877810" />
+    <state x="431" y="154" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1577804808033" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -664,7 +669,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SimpleLanguage@Number.rcov" NAME="Number Coverage Results" MODIFIED="1556176026319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl" MODULE_NAME="SimpleLanguage" />
-    <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1575728459454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/dpda" MODULE_NAME="SimpleLanguage" />
+    <SUITE FILE_PATH="coverage/RubyVersion@Main__1_.rcov" NAME="Main (1) Coverage Results" MODIFIED="1577805105666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/tm" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__2_.rcov" NAME="Main (2) Coverage Results" MODIFIED="1577374453807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/dpda" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@Main__4_.rcov" NAME="Main (4) Coverage Results" MODIFIED="1577629780778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/pda/ndpa" MODULE_NAME="SimpleLanguage" />
     <SUITE FILE_PATH="coverage/RubyVersion@SyntaxAnalyzer.rcov" NAME="SyntaxAnalyzer Coverage Results" MODIFIED="1577630354892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsl/analysis" MODULE_NAME="SimpleLanguage" />
