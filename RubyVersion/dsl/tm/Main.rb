@@ -50,9 +50,44 @@ dtm.run
 puts dtm
 puts dtm.accepting?
 
+# 卡死情况处理
 tape = Tape.new(['1', '2', '1'], '1', [], '_')
 dtm = DTM.new(TMConfiguration.new(1, tape), [3], rulebook)
 dtm.run
 puts dtm
 puts dtm.accepting?
 puts dtm.stuck?
+
+rulebook = DTMRuleBook.new([
+                                # 状态 1：向右扫描，查找 a
+                               TMRule.new(1, 'X', 1, 'X', :right), # 跳过 X
+                               TMRule.new(1, 'a', 2, 'X', :right), # 删除 a，进入状态 2
+                               TMRule.new(1, '_', 6, '_', :left), # 查找空格，进入状态 6（接受）
+                               # 状态 2：向右扫描，查找 b
+                               TMRule.new(2, 'a', 2, 'a', :right), # 跳过 a
+                               TMRule.new(2, 'X', 2, 'X', :right), # 跳过 X
+                               TMRule.new(2, 'b', 3, 'X', :right), # 删除 b，进入状态 3
+                               # 状态 3：向右扫描，查找 c
+                               TMRule.new(3, 'b', 3, 'b', :right), # 跳过 b
+                               TMRule.new(3, 'X', 3, 'X', :right), # 跳过 X
+                               TMRule.new(3, 'c', 4, 'X', :right), # 删除 c，进入状态 4
+                               # 状态 4：向右扫描，查找字符串结束标记
+                               TMRule.new(4, 'c', 4, 'c', :right), # 跳过 c
+                               TMRule.new(4, '_', 5, '_', :left), # 查找空格，进入状态 5
+                               # 状态 5：向左扫描，查找字符串开始标记
+                               TMRule.new(5, 'a', 5, 'a', :left), # 跳过 a
+                               TMRule.new(5, 'b', 5, 'b', :left), # 跳过 b
+                               TMRule.new(5, 'c', 5, 'c', :left), # 跳过 c
+                               TMRule.new(5, 'X', 5, 'X', :left), # 跳过 X
+                               TMRule.new(5, '_', 1, '_', :right) # 查找空格，进入状态 1
+                           ])
+
+tape = Tape.new([], 'a', ['a', 'a', 'b', 'b', 'b', 'c', 'c', 'c'], '_')
+dtm = DTM.new(TMConfiguration.new(1, tape), [6], rulebook)
+10.times {dtm.step}
+puts dtm.current_configuration
+25.times {dtm.step}
+puts dtm.current_configuration
+dtm.run
+puts dtm.current_configuration
+puts dtm.accepting?
