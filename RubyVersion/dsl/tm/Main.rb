@@ -3,6 +3,7 @@ require 'Tape'
 require 'TMRule'
 require 'TMConfiguration'
 require 'DTMRulebook'
+require 'DTM'
 
 tape = Tape.new(['1', '0', '1'], '1', [], '_')
 puts tape.inspect
@@ -42,3 +43,16 @@ configuration = rulebook.next_configuration(configuration)
 puts configuration
 #configuration = rulebook.next_configuration(configuration)
 #puts configuration
+
+dtm = DTM.new(TMConfiguration.new(1, tape), [3], rulebook)
+puts dtm.accepting?
+dtm.run
+puts dtm
+puts dtm.accepting?
+
+tape = Tape.new(['1', '2', '1'], '1', [], '_')
+dtm = DTM.new(TMConfiguration.new(1, tape), [3], rulebook)
+dtm.run
+puts dtm
+puts dtm.accepting?
+puts dtm.stuck?
