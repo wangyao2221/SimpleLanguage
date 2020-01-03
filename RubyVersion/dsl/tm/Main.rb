@@ -91,3 +91,30 @@ puts dtm.current_configuration
 dtm.run
 puts dtm.current_configuration
 puts dtm.accepting?
+
+
+rulebook = DTMRuleBook.new([
+                                # 状态 1： 从磁带读取第一个字符
+                               TMRule.new(1, 'a', 2, 'a', :right), # 记住 a
+                               TMRule.new(1, 'b', 3, 'b', :right), # 记住 b
+                               TMRule.new(1, 'c', 4, 'c', :right), # 记住 c
+                               # 状态 2： 向右扫描，查找字符串结束标记（记住 a）
+                               TMRule.new(2, 'a', 2, 'a', :right), # 跳过 a
+                               TMRule.new(2, 'b', 2, 'b', :right), # 跳过 b
+                               TMRule.new(2, 'c', 2, 'c', :right), # 跳过 c
+                               TMRule.new(2, '_', 5, 'a', :right), # 找到空格，写 a
+                               # 状态 3： 向右扫描，查找字符串结束标记（记住 b）
+                               TMRule.new(3, 'a', 3, 'a', :right), # 跳过 a
+                               TMRule.new(3, 'b', 3, 'b', :right), # 跳过 b
+                               TMRule.new(3, 'c', 3, 'c', :right), # 跳过 c
+                               TMRule.new(3, '_', 5, 'b', :right), # 找到空格，写 b
+                               TMRule.new(4, 'a', 4, 'a', :right), # 跳过 a
+                               TMRule.new(4, 'b', 4, 'b', :right), # 跳过 b
+                               TMRule.new(4, 'c', 4, 'c', :right), # 跳过 c
+                               TMRule.new(4, '_', 5, 'c', :right) # 查找空格，写 c
+                           ])
+
+tape = Tape.new([], 'b', ['c', 'b', 'c', 'a'], '_')
+dtm = DTM.new(TMConfiguration.new(1, tape), [5], rulebook)
+dtm.run
+puts dtm.current_configuration.tape.inspect
