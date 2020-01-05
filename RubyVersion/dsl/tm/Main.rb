@@ -118,3 +118,29 @@ tape = Tape.new([], 'b', ['c', 'b', 'c', 'a'], '_')
 dtm = DTM.new(TMConfiguration.new(1, tape), [5], rulebook)
 dtm.run
 puts dtm.current_configuration.tape.inspect
+
+def increment_rules(start_state, return_state)
+  incrementing = start_state
+  finishing = Object.new
+  finished = return_state
+  [
+      TMRule.new(incrementing, '0', finishing, '1', :right),
+      TMRule.new(incrementing, '1', incrementing, '0', :left),
+      TMRule.new(incrementing, '_', finishing, '1', :right),
+      TMRule.new(finishing, '0', finishing, '0', :right),
+      TMRule.new(finishing, '1', finishing, '1', :right),
+      TMRule.new(finishing, '_', finished, '_', :left)
+  ]
+end
+
+added_zero, added_one, added_two, added_three = 0, 1, 2, 3
+rulebook = DTMRuleBook.new(
+    increment_rules(added_zero, added_one) +
+        increment_rules(added_one, added_two) +
+        increment_rules(added_two, added_three)
+)
+puts rulebook.rules.length
+tape = Tape.new(['1', '0', '1'], '1', [], '_')
+dtm = DTM.new(TMConfiguration.new(added_zero, tape), [added_three], rulebook)
+dtm.run
+puts dtm.current_configuration.tape.inspect
