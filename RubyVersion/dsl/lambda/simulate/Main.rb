@@ -8,3 +8,17 @@ puts p.call(2)
 puts q.call(2)
 
 puts -> x { x + 5}[5]
+
+TRUE = -> x { -> y { x } }
+FALSE = -> x { -> y { y } }
+puts FALSE[true][false]
+
+#IF = -> b {
+#  -> x {
+#    -> y {
+#      b[x][y]
+#    }
+#  }
+#}
+IF = -> b { b } # 和上面等价
+puts IF[FALSE][true][false]
