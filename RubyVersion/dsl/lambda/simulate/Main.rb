@@ -4,6 +4,7 @@ require 'Integer'
 require 'Boolean'
 require 'Predicate'
 require 'Pair'
+require 'Calculation'
 
 puts -> x { x + 2 }.call(1)
 puts -> x, y { x + y }.call(3, 4)
@@ -33,6 +34,16 @@ puts to_boolean(IS_ZERO[ZERO])
 puts to_boolean(IS_ZERO[ONE])
 
 # 有序对
+puts '有序对'
 pair = PAIR[ONE][TWO] # 不全调用可以作为一个类型，在LEFT和RIGHT操作时给最后一个参数，就是函数f，LEFT和RIGHT的函数f分别是x、y
 puts to_integer(LEFT[pair])
 puts to_integer(RIGHT[pair])
+
+# 数值运算
+puts '数值运算'
+puts to_integer(INCREMENT[ONE])
+puts to_integer(DECREMENT[THREE])
+puts to_integer(ADD[THREE][TWO])
+puts to_integer(SUBTRACT[THREE][TWO])
+puts to_integer(MULTIPLY[THREE][TWO])
+puts to_integer(POWER[THREE][TWO])
