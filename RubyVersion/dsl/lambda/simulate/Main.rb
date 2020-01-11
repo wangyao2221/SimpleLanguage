@@ -47,3 +47,16 @@ puts to_integer(ADD[THREE][TWO])
 puts to_integer(SUBTRACT[THREE][TWO])
 puts to_integer(MULTIPLY[THREE][TWO])
 puts to_integer(POWER[THREE][TWO])
+puts to_integer(MOD[THREE][TWO])
+
+# test
+#puts 'test'
+#test = -> x {
+#  if x > 0
+#    test[x - 1]
+#  else
+#    x
+#  end
+#}
+#
+#puts test[5]
