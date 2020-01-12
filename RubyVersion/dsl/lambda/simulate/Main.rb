@@ -51,11 +51,11 @@ puts to_integer(MOD[THREE][TWO])
 
 # test
 #puts 'test'
-#test = -> x {
-#  if x > 0
-#    test[x - 1]
+#test = -> n {
+#  if to_boolean(IS_LESS_OR_EQUAL(n))
+#    test[SUBTRACT[n][ONE]]
 #  else
-#    x
+#    n
 #  end
 #}
 #

@@ -6,10 +6,19 @@ SUBTRACT = -> m { -> n { n[DECREMENT][m] } }
 MULTIPLY = -> m { -> n { n[ADD[m]][ZERO] } }
 POWER = -> m { -> n { n[MULTIPLY[m]][ONE] } }
 IS_LESS_OR_EQUAL = -> m { -> n { IS_ZERO[SUBTRACT[m][n]] } }
-MOD = -> m { -> n  {
+#MOD = -> m { -> n  {
+#  IF[IS_LESS_OR_EQUAL[n][m]][
+#      -> x { MOD[SUBTRACT[m][n]][n][x] } # 不明白这个-> x
+#  ][
+#      m
+#  ]
+#} }
+Z = -> f { -> x { f[-> y { x[x][y] }] }[-> x { f[-> y { x[x][y] }] }] } # Z组合子
+# MOD函数里不调用MOD，无欺骗版本？
+MOD = Z[-> f {-> m { -> n  {
   IF[IS_LESS_OR_EQUAL[n][m]][
-      -> x { MOD[SUBTRACT[m][n]][n][x] } # 不明白这个-> x
+      -> x { f[SUBTRACT[m][n]][n][x] } # 不明白这个-> x
   ][
       m
   ]
-} }
+} }}]
