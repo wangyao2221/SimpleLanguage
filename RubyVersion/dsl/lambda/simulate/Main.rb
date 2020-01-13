@@ -5,6 +5,7 @@ require 'Boolean'
 require 'Predicate'
 require 'Pair'
 require 'Calculation'
+require 'List'
 
 puts -> x { x + 2 }.call(1)
 puts -> x, y { x + y }.call(3, 4)
@@ -49,6 +50,10 @@ puts to_integer(MULTIPLY[THREE][TWO])
 puts to_integer(POWER[THREE][TWO])
 puts to_integer(MOD[THREE][TWO])
 
+# List
+puts 'List'
+my_list = UNSHIFT[UNSHIFT[UNSHIFT[EMPTY][THREE]]][TWO][ONE]
+puts to_integer(FIRST[REST[my_list]])
 # test
 #puts 'test'
 #test = -> n {
