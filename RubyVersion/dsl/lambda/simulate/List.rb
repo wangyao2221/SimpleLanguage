@@ -5,3 +5,14 @@ UNSHIFT = -> l { ->  x {
 IS_EMPTY = LEFT
 FIRST = -> l { LEFT[RIGHT[l]] }
 REST = -> l { RIGHT[RIGHT[l]] }
+
+def to_array(proc)
+  array = []
+
+  until to_boolean(IS_ZERO[proc])
+    array.push(FIRST[proc])
+    proc = REST[proc]
+  end
+
+  array
+end

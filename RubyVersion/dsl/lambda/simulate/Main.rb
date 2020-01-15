@@ -54,6 +54,7 @@ puts to_integer(MOD[THREE][TWO])
 puts 'List'
 my_list = UNSHIFT[UNSHIFT[UNSHIFT[EMPTY][THREE]]][TWO][ONE]
 puts to_integer(FIRST[REST[my_list]])
+puts to_array(my_list).map { |p| to_integer(p)}
 # test
 #puts 'test'
 #test = -> n {
