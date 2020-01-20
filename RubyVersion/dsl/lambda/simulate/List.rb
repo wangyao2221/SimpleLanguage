@@ -9,7 +9,7 @@ REST = -> l { RIGHT[RIGHT[l]] }
 def to_array(proc)
   array = []
 
-  until to_boolean(IS_ZERO[proc])
+  until to_boolean(IS_EMPTY[proc])
     array.push(FIRST[proc])
     proc = REST[proc]
   end
