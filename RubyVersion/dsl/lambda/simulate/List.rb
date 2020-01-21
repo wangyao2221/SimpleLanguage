@@ -16,3 +16,15 @@ def to_array(proc)
 
   array
 end
+
+RANGE = Z[-> f {
+  -> m { -> n {
+    IF[IS_LESS_OR_EQUAL[m][n]][
+        -> x {
+          UNSHIFT[f[INCREMENT[m]][n]][m][x]
+        }
+    ][
+        EMPTY
+    ]
+  } }
+}]
