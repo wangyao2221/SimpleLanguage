@@ -60,16 +60,21 @@ my_list = UNSHIFT[
 puts to_integer(FIRST[REST[my_list]])
 my_integer_list = to_array(my_list).map { |p| to_integer(p)}
 puts my_integer_list.to_s
-my_range = RANGE[ONE][THREE]
 # range
 puts 'range'
+my_range = RANGE[ONE][THREE]
 puts to_array(my_range).map { |p| to_integer(p) }.to_s
+# fold
+puts 'fold'
+puts to_integer(FOLD[RANGE[ONE][FIVE]][ZERO][ADD])
+puts to_integer(FOLD[RANGE[ONE][FIVE]][ONE][MULTIPLY])
 # test
 #puts 'test'
 #test = -> n {
 #  if to_boolean(IS_LESS_OR_EQUAL(n))
 #    test[SUBTRACT[n][ONE]]
 #  else
+#
 #    n
 #  end
 #}
