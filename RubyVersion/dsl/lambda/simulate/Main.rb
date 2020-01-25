@@ -68,6 +68,11 @@ puts to_array(my_range).map { |p| to_integer(p) }.to_s
 puts 'fold'
 puts to_integer(FOLD[RANGE[ONE][FIVE]][ZERO][ADD])
 puts to_integer(FOLD[RANGE[ONE][FIVE]][ONE][MULTIPLY])
+
+# map
+puts 'map'
+my_list = MAP[RANGE[ONE][FIVE]][INCREMENT]
+puts to_array(my_list).map { |p| to_integer(p) }
 # test
 #puts 'test'
 #test = -> n {
