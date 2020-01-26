@@ -6,17 +6,18 @@ require 'Predicate'
 require 'Pair'
 require 'Calculation'
 require 'List'
+require 'String'
 
 puts -> x { x + 2 }.call(1)
 puts -> x, y { x + y }.call(3, 4)
-puts -> x { -> y { x + y }}.call(3).call(4)
+puts -> x { -> y { x + y } }.call(3).call(4)
 
 p = -> n { n * 2 }
 q = -> x { p.call(2) }
 puts p.call(2)
 puts q.call(2)
 
-puts -> x { x + 5}[5]
+puts -> x { x + 5 }[5]
 
 # 数值
 puts '数值'
@@ -58,7 +59,7 @@ my_list = UNSHIFT[
     ][TWO]
 ][ONE]
 puts to_integer(FIRST[REST[my_list]])
-my_integer_list = to_array(my_list).map { |p| to_integer(p)}
+my_integer_list = to_array(my_list).map { |p| to_integer(p) }
 puts my_integer_list.to_s
 # range
 puts 'range'
@@ -73,6 +74,31 @@ puts to_integer(FOLD[RANGE[ONE][FIVE]][ONE][MULTIPLY])
 puts 'map'
 my_list = MAP[RANGE[ONE][FIVE]][INCREMENT]
 puts to_array(my_list).map { |p| to_integer(p) }
+
+# string
+puts 'string'
+puts to_char(ZED)
+puts to_string(FIZZBUZZ)
+puts to_array(TO_DIGITS[FIVE]).map { |p| to_integer(p) }
+puts to_array(TO_DIGITS[POWER[FIVE][THREE]]).map { |p| to_integer(p) }
+
+# solution
+puts 'solution'
+solution = MAP[RANGE[ONE][FIVE]][-> n {
+  IF[IS_ZERO[MOD[n][TWO]]][
+      FIZZBUZZ
+  ][IF[IS_ZERO[MOD[n][THREE]]][
+        FIZZ
+    ][IF[IS_ZERO[MOD[n][FIVE]]][
+          BUZZ
+      ][
+          TO_DIGITS[n]
+      ]]]
+}]
+
+to_array(solution).each do |p|
+  puts to_string(p)
+end
 # test
 #puts 'test'
 #test = -> n {
